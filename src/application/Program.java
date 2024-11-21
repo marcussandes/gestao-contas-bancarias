@@ -32,7 +32,30 @@ public class Program {
 		
 		System.out.println();
 		System.out.println("Account data: ");
-		System.out.println("Account: " + accountNumber + ", Holder: " + accountHolder + ", Balance: $ " + depositValue);
+		System.out.println("Account: " + accountNumber);
+		System.out.println("Holder: " + accountHolder);
+		System.out.println("Balance: $" + depositValue);
+		System.out.println();
+		
+		System.out.print("Enter deposit value: ");
+		double depositValue1 = sc.nextDouble();
+		double totalDeposit = depositValue + depositValue1;
+		
+		System.out.println("Update account data: ");
+		System.out.println("Account: " + accountNumber);
+		System.out.println("Holder: " + accountHolder);
+		System.out.println("Balance: $" + totalDeposit);
+		System.out.println();
+		
+		System.out.print("Enter withdraw value: ");
+		double withdrawValue = sc.nextDouble(); 
+		double balance = (totalDeposit - withdrawValue) - 5;
+		System.out.println("Update account data: ");
+		System.out.println("Account: " + accountNumber);
+		System.out.println("Holder: " + accountHolder);
+		System.out.println("Balance: $" + balance);
+		
+		
 		
 		
 		
